@@ -21,7 +21,7 @@ for tablerow in tablerows:
     data_item = {
         'Status': status.text,
         'CRN': CRN.text,
-        'Course Title': courseTitle.text,
+        'Course Title': courseTitle.text.split("\n")[0],
         'Professor': professor.text
     }
 
